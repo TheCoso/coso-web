@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 10px;
+    @apply bg-slate-900 font-bricolage h-svh flex flex-col overflow-hidden m-0 
+}
+
+.pattern {
+    background-image: radial-gradient(
+        rgba(255 255 255 / 10%) 1px,
+        transparent 1px
+    );
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+    overflow:hidden;
+    transition: background-position 600ms ease,;
+}
+
+.pattern:hover {
+    background-position: 50% 45%;
+}
+
+.card-animate:after {
+    background: linear-gradient(
+        transparent,
+        rgb(139,92,246),
+        transparent
+    );
+    transition: top 600ms ease,
+                opacity 600ms ease;
+    content: "";
+}
+
+.card-animate:hover:after {
+    top: 25%;
+    opacity: 1;
+}
