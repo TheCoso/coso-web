@@ -4,7 +4,7 @@ interface CardsProp {
     extraClasses?: string;
     section?: string;
     title: string;
-    paragraph: string;
+    paragraph?: string;
 }
 
 export function Card(props: CardsProp) {
@@ -27,9 +27,7 @@ export function Card(props: CardsProp) {
                 <div class="
                     self-end
                 ">
-                    <Show
-                        when={props.section}
-                    >
+                    <Show when={props.section} >
                         <h3
                             class="
                                 text-sm uppercase
@@ -46,14 +44,17 @@ export function Card(props: CardsProp) {
                         "
                         innerHTML={props.title}
                     />
-                    <p
-                        class="
-                            pt-3
-                            text-base
-                            text-slate-200
-                        "
-                        innerHTML={props.paragraph}
-                    />
+
+                    <Show when={props.section} >
+                        <p
+                            class="
+                                pt-3
+                                text-base
+                                text-slate-200
+                            "
+                            innerHTML={props.paragraph}
+                        />
+                    </Show>
                 </div>
             </div>
         </div>
