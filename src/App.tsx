@@ -7,7 +7,7 @@ const App: Component = () => {
     return (
         <main class="">
             <Router>
-                <Route path="/home" component={Home}/>
+                <Route path="/" component={Home}/>
             </Router>
         </main>
     );

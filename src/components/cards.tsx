@@ -1,7 +1,7 @@
 import { Show } from "solid-js";
 
 interface CardsProp {
-    extraClasses?: string;
+    img?: Image;
     section?: string;
     title: string;
     paragraph?: string;
@@ -24,12 +24,16 @@ export function Card(props: CardsProp) {
                 h-full p-14
                 pattern
             ">
+                <div>
+                    <img src="assets/images/{props.img.name}" alt="" />
+                </div>
                 <div class="
                     self-end
                 ">
                     <Show when={props.section} >
                         <h3
                             class="
+                                font-semibold
                                 text-sm uppercase
                                 text-violet-500
                             "
@@ -45,7 +49,7 @@ export function Card(props: CardsProp) {
                         innerHTML={props.title}
                     />
 
-                    <Show when={props.section} >
+                    <Show when={props.paragraph} >
                         <p
                             class="
                                 pt-3

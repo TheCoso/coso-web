@@ -7,7 +7,12 @@ interface PageWrapperProps {
 export function PageWrapper(props: PageWrapperProps){
     return(
         <div class="p-3">
-            {props.children}
+            <div class="
+                mx-auto
+                max-w-[45rem] items-self
+            ">
+                {props.children}
+            </div>
         </div>
     )
 }
