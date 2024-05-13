@@ -16,7 +16,6 @@ export function Card(props: CardsProp) {
             border-slate-800 bg-slate-900
             text-center
             card-animate
-            after:h-16 after:w-px after:absolute after:-left-px after:top-[65%] after:opacity-0
         ">
             <div class="
                 flex
