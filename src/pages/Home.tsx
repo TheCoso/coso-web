@@ -4,6 +4,18 @@ import { PageWrapper } from "../components/wrappers";
 export default function Home() {
     return (
         <PageWrapper>
+
+                <header>
+                    <h1 class="
+                        text-3xl text-white font-semibold text-center
+                        mx-auto py-16
+                        transition-colors
+                        hover:text-sky-100
+                        lg:text-6xl
+                    ">
+                        Hello world
+                    </h1>
+                </header>
                 <Card
                     section="sezione"
                     title="Ciao, titolone!"

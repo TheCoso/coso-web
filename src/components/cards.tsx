@@ -20,7 +20,7 @@ export function Card(props: CardsProp) {
         ">
             <div class="
                 flex
-                justify-center items-cente
+                justify-center items-center
                 h-full p-14
                 pattern
             ">
