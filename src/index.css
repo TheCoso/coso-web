@@ -4,7 +4,7 @@
 
 body {
     margin: 10px;
-    @apply bg-slate-900 font-bricolage h-svh flex flex-col overflow-hidden m-0 
+    @apply bg-neutral-50 font-bricolage h-svh flex flex-col overflow-hidden m-0 
 }
 
 .pattern {
@@ -31,6 +31,12 @@ body {
     transition: top 600ms ease,
                 opacity 600ms ease;
     content: "";
+    height: 4rem;
+    width: 1px;
+    position: absolute;
+    left: -1px;
+    top: 65%;
+    opacity: 0;
 }
 
 .card-animate:hover:after {
